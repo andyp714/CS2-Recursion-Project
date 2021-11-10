@@ -5,19 +5,19 @@ Created on Nov 10, 2021
 '''
 def main():
     pass
-    n = int(input("WHat number"))
-    print(factorial(n))
+    n = int(input("WHat number do you want the summation of"))
+    print(summation(n))
 
 
 
 
-def factorial(n):
+def summation(n):
     if n == 0:
         return 0
     if n == 1:
         return 1
     
-    return n + factorial(n-1)
+    return n + summation(n-1)
 
 
 
