@@ -1,0 +1,28 @@
+'''
+Created 10/12/2021
+fibonacci'''
+'''
+fibonacci    F(n) = 0    if n = 0
+F(n) = 1    if n = 1
+F(n) = F(n-1) + F(n-2)    if n > 1
+'''
+
+def fibonacci(n):
+    if n == 0:
+        return n
+    
+    elif n == 1:
+        return n
+ 
+    elif n > 1:
+        return fibonacci(n -1) + fibonacci(n -2)
+ 
+
+def main():
+    pass
+    n = int(input("what number"))
+    print(fibonacci(n))
+
+if __name__ == "__main__":
+    main()
+
