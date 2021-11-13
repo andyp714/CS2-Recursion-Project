@@ -1,0 +1,29 @@
+'''
+Created 10/12/2021
+Compound Interest Balance
+'''
+'''
+    Compound Interest Balance
+    B(p,r,t) = P if t = 0
+    B(p,r,t) = (1 + r) * B(p,r,t-1) if t > 0
+    note-- i did rate over 100 as rate in this case would be inputted as a percentage i believe 
+'''
+
+
+def compound_interest_recursive(principal, rate, time):
+    if time == 0:
+        return principal
+    else:
+        return (1 + rate/100) * compound_interest_recursive(principal, rate, time -1)
+    
+
+def main():
+    pass
+    time = int(input("what number"))
+    rate = int(input("what number"))
+    principal = int(input("what number"))
+    print(compound_interest_recursive(principal, rate, time))
+
+if __name__ == "__main__":
+    main()
+
