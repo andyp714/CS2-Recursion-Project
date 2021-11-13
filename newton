@@ -1,0 +1,26 @@
+'''
+Created 10/12/2021
+newton
+'''
+'''
+
+Square Root Newton's algorithm
+squareroot(n,p,e) = e  if | e2 - n | < p
+squareroot(n,p,e) = SR(n,p,(e+n)/e)/2)otherwise e begins at n
+    '''
+def squareroot(n,p,e):
+    if abs(e * e - n) < p:
+        return e 
+    else:
+        return squareroot(n,p,(e+n)/e)/2
+
+def main():
+    pass
+    n= int(input("what number"))
+    p= int(input("what number"))
+    e= int(input("what number"))
+    print(squareroot(n,p,e))
+
+if __name__ == "__main__":
+    main()
+
