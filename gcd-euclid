@@ -1,0 +1,26 @@
+'''
+Created 10/12/2021
+GCD EUCLIDS  ALGORITHIM
+'''
+'''
+recursive euclidean algorithm gcd python
+GCD(x,y) = y    if y <= x & x mod y = 0
+GCD(x,y) = GCD(y,x mod y)    otherwise
+'''
+
+def gcd(x, y):
+    if y <= x and x % y == 0:
+        return y
+    else:
+        return gcd(y, x % y)
+  #return x
+
+def main():
+    pass
+    y= int(input("what number"))
+    x= int(input("what number"))
+    print(gcd(x, y))
+
+if __name__ == "__main__":
+    main()
+
