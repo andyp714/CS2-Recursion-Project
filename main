@@ -1,9 +1,7 @@
 '''
 Created 10/12/2021
-logan rocks :)     
-    
+logan rocks :)      
 '''
-
 
 function = ()
 def main():
@@ -99,7 +97,6 @@ def fibonacci(n):
     elif n > 1:
         return fibonacci(n -1) + fibonacci(n -2)
  
-
 def gcd(x, y):
     if y <= x and x % y == 0:
         return y
