@@ -1,29 +1,8 @@
 '''
 Created 10/12/2021
 main
-Factorial
-Summation
-
-Powers
-
-Sum of a number's digits
-
-Fibonacci
-
-Product of a number's digits
-
-GCD EUCLIDS  ALGORITHIM
-
-Compound Interest Balance 
-
-Product of 2 whole numbers
-
-Square Root Newton's algorithm
-
-     
     
 '''
-
 
 function = ()
 def main():
