@@ -1,8 +1,10 @@
 '''
 Created 10/12/2021
-main
+logan rocks :)     
     
 '''
+
+
 function = ()
 def main():
     pass
@@ -12,11 +14,10 @@ def main():
     3 for powers
     4 for sum of a number's digits
     5 for fibonacci
-    6 for product of a number's digits
-    7 for GCD EUCLIDS  ALGORITHIM
-    8 for compound interest balance 
-    9 for product of 2 whole numbers
-    10 for square root newton's algorithm
+    6 for GCD EUCLIDS  ALGORITHIM
+    7 for compound interest balance 
+    8 for product of 2 whole numbers
+    9 for square root newton's algorithm
     """
     print(options)
     userinput =  input("please a chose a number from the menu above")
@@ -37,21 +38,19 @@ def main():
         n = int(input("what number"))
         function = fibonacci(n)
     elif userinput == "6":
-        print("work")
-    elif userinput == "7":
         y= int(input("what number"))
         x= int(input("what number"))
         function = gcd(x, y)
-    elif userinput == "8":
+    elif userinput == "7":
         time = int(input("what number"))
         rate = int(input("what number"))
         principal = int(input("what number"))
         function = compound_interest_recursive(principal, rate, time)
-    elif userinput == "9":
+    elif userinput == "8":
         a = int(input("what number"))
         b = int(input("what number"))
         functions = ProductNumber(a, b)
-    elif userinput == "10":
+    elif userinput == "9":
         n= int(input("what number"))
         p= int(input("what number"))
         e= int(input("what number"))
@@ -128,4 +127,3 @@ def squareroot(n,p,e):
 
 if __name__ == "__main__":
     main()
-
